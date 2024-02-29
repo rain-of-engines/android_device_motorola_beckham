@@ -14,10 +14,4 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_beckham.mk
-
-COMMON_LUNCH_CHOICES := \
-    aosp_beckham-eng \
-    aosp_beckham-user \
-    aosp_beckham-userdebug
+PRODUCT_MAKEFILES := $(wildcard device/motorola/targets/devices/beckham/*.mk)
