@@ -19,6 +19,8 @@ DEVICE_PATH := device/motorola/beckham
 # Inherit from motorola sdm660-common
 $(call inherit-product, device/motorola/sdm660-common/common.mk)
 
+PRODUCT_MODEL := Moto Z3 Play
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 
