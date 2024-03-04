@@ -1,3 +1,3 @@
-# Mark system_block_devices as super partition block devices for retrofit
-# dynamic partitions.
+type greybus_raw_device, dev_type, mlstrustedobject;
+type mods_camd_device, dev_type, mlstrustedobject;
 typeattribute system_block_device super_block_device_type;
