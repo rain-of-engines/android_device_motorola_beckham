@@ -22,7 +22,14 @@ $(call inherit-product, device/motorola/sdm660-common/common.mk)
 PRODUCT_MODEL := Moto Z3 Play
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(LOCAL_PATH)/overlay/lineage-sdk
+
+PRODUCT_PACKAGES += \
+    FrameworksOverlay \
+    SettingsOverlayBeckham \
+    SettingsProviderBeckham \
+    SystemUIOverlayBeckham
 
 # API
 PRODUCT_SHIPPING_API_LEVEL := 27
