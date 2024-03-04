@@ -68,7 +68,7 @@ PRODUCT_PACKAGES += \
     init.gbmods.sh
 
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/etc/init.sys.beckham.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.sys.beckham.rc
+    $(DEVICE_PATH)/init/init.sys.beckham.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.sys.beckham.rc
 
 # ModService
 PRODUCT_COPY_FILES += \
